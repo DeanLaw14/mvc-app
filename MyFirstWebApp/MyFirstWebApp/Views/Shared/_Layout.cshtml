@@ -28,13 +28,16 @@
         </div>
     </div>
     <div class="container body-content">
+        <!--The render body method renders the code for the respective view eg About.cshtml 
+            code will be displayed here--> 
         @RenderBody()
         <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
     </div>
-
+    <!--The "at" symbol is what defines the razor syntax which allows you to mix c# with html.
+        Code that follows the "at" symbol is c#-->
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)

@@ -10,6 +10,8 @@ namespace MyFirstWebApp.Controllers
     {
         public ActionResult Index()
         {
+            // The Action result method name is mapped to the corresponding
+            // page name in the respective controllers views directory
             return View();
         }
 
