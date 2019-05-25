@@ -25,6 +25,8 @@ namespace MyFirstWebApp
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/bootstrap.bundle.js"));
 
+            // The css that styles the page is bundled together into a specified styleBundle
+            // and this bundle can be added to the layout(base) page
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
