@@ -29,6 +29,7 @@ namespace MyFirstWebApp
             // and this bundle can be added to the layout(base) page
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/fontawesome.css",
                       "~/Content/site.css"));
         }
     }
