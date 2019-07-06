@@ -27,7 +27,13 @@ namespace MyFirstWebApp
                 name: "Default",
                 url: "{controller}/{action}/{id}", // Pattern
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional } // Handler
-            );                    
+            );
+
+            routes.MapRoute(
+             name: "PeopleIndexPage",
+             url: "{controller}/{action}/{id}", // Pattern
+             defaults: new { controller = "People", action = "Index", id = UrlParameter.Optional } // Handler
+         );
         }
     }
 }

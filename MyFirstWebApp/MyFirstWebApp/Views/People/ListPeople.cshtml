@@ -19,9 +19,9 @@
             @Html.DisplayNameFor(model => model.LastName)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Age)
+            @Html.LabelFor(model => model.First().Age, htmlAttributes: new { @class = "control-label col-md-2" })
         </th>
-        <th>
+        <th>   
             @Html.DisplayNameFor(model => model.IsActive)
         </th>
         <th></th>
