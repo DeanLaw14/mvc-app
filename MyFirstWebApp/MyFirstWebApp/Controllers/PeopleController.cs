@@ -16,7 +16,7 @@ namespace MyFirstWebApp.Controllers
         }
 
         public ActionResult ListPeople()
-        {
+        { 
             var people = new List<PersonModel>
             {
                 new PersonModel { FirstName = "Dean", LastName = "Akinwale", Age = 27, IsActive = false },
