@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 
@@ -20,5 +21,13 @@ namespace MyFirstWebApp.Models
         public int YearsOfExperience { get; set; }
 
         public DateTime YearFirstUsed { get; set; }
+    }
+
+    // The Entity framework DbContext class handles the fetching, storing
+    // and updating of Tool instances in a database, effectively maps Tool
+    // objects to records (rows in a database table)
+    public class ToolDbContext : DbContext
+    {
+        public DbSet<Tool> Tools { get; set; }
     }
 }
