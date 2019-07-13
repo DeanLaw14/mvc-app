@@ -7,6 +7,8 @@ namespace MyFirstWebApp.Models
 {
     public class Tool
     {
+        // Simple POCO (plain old CLR objects) class will allow the
+        // entity framework to create a DB based on it
         public int ID { get; set; }
 
         public string Name { get; set; }
